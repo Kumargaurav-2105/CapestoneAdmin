@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom'
 const AdminNav=()=>{
   return (
-    <Navbar bg="dark" variant='dark' expand="lg">
+    <Navbar bg="dark" variant='dark' expand="lg" fixed='top'>
       <Container fluid>
         <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -17,7 +17,7 @@ const AdminNav=()=>{
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Link to='/' style={{textDecoration: 'none', color:"white", margin:'0.5rem'}}>Home</Link>
+            <Link to='/' style={{textDecoration: 'none', color:"white", margin:'0.5rem'}}>Applications</Link>
             <Link to='/addjobs' style={{textDecoration: 'none', color:"white", margin:'0.5rem'}}>Add Jobs</Link>
             <Link to='/myjobs' style={{textDecoration: 'none', color:"white", margin:'0.5rem'}}>My Jobs</Link>
             <Link to='/employees' style={{textDecoration: 'none', color:"white", margin:'0.5rem'}}>Employees</Link>
